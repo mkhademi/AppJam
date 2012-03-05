@@ -1,0 +1,137 @@
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/backgroundgradient"
+        android:gravity="center">
+
+        <View
+        android:layout_width="wrap_content"
+        android:background="@drawable/gradient"
+        android:layout_height="1dp"></View>
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/barbackground"
+            android:layout_centerHorizontal="true" android:alwaysDrawnWithCache="true">
+
+            <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="63dp"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:text="cancel"/>          
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Eat Healthy"
+                android:textColor="#000000"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/gradient"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/searchButton1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Search"/>
+
+        </LinearLayout>
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout2">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="60dp"
+                android:text="Narrow Results by:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tableRow1"
+            android:baselineAligned="true">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="50dp"
+                android:text="Price"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000"/>
+
+           <EditText
+                android:id="@+id/etPrice"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:inputType="number" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tableRow2">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="50dp"
+                android:text="Distance"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000"/>
+          
+            
+            <EditText
+                android:id="@+id/etDistance"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:inputType="number" />
+
+        </TableRow>      
+        
+    </RelativeLayout>

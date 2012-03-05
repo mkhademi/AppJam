@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/barbackground">
+
+        <Button
+            android:id="@+id/filterbuttonincalorietracker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:bufferType="normal"
+            android:text="Filter"
+            android:width="60dp" />
+        
+         <Button
+            android:id="@+id/findRecommendations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/restaurantsButton"
+            android:layout_toRightOf="@+id/filterbuttonincalorietracker"
+            android:layout_marginTop="5dp"
+            android:text="Recommendations"
+            android:width="100dp"
+             />
+        <Button
+            android:id="@+id/restaurantsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:text="Restaurants"
+            android:width="100dp" />
+
+    </RelativeLayout>
+
+     <com.google.android.maps.MapView
+         android:id="@+id/MapView01"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/relativeLayout1"
+         android:layout_above="@+id/relativeLayout2"
+         android:layout_alignParentRight="true"         
+         android:apiKey="01ZUXFxFKMER-hjUhP3fownXTqwIdtXm0D_j_FQ" />
+    
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/barbackground"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/myinfobutton"
+            android:layout_width="65dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Profile"
+            android:background="@drawable/home" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="60dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:editable="false"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editText3"
+            android:layout_alignBottom="@+id/editText3"
+            android:layout_toLeftOf="@+id/editText3"
+            android:text="/"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/calories"
+            android:layout_width="60dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/textView2"
+            android:editable="false"
+            android:inputType="number" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/calories"
+            android:layout_alignBottom="@+id/calories"
+            android:layout_toLeftOf="@+id/calories"
+            android:text="Calories"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/steps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/textView1"
+            android:layout_toRightOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_toRightOf="@+id/myinfobutton"
+            android:text="Steps"
+            android:textColor="#000000" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

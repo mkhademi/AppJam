@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="gender_prompt">What is your gender?</string>
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    
+    <string name="feet_prompt">Feet</string>
+    <string-array name="foot_array">
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    
+    <string name="inches_prompt">inches</string>
+    <string-array name="inch_array">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+    </string-array>
+   
+    <string-array name="restaurant_array">
+        <item>Wendys</item>
+        <item>Panda Express</item>
+        <item>Subway</item>
+        <item>Starbucks</item>
+        <item>Wahoos Tacos</item>
+        <item>Benes Pasta</item>
+        <item>Jamba Juice</item>
+        <item>Quiznos</item>
+    </string-array>
+    
+    <string-array name="restaurantmenu_array">
+        <item>item1  500 calories</item>
+        <item>item2  600 calories</item>
+        <item>item3  350 calories</item>
+        <item>item4  450 calories</item>
+        <item>item5  500 calories</item>
+        <item>You can remove this</item>
+        <item>item off list in the</item>
+        <item>res values folder in stringxml</item>
+        <item>this is just and example</item>
+    </string-array>
+    
+    
+</resources>
